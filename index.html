@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axl Rich</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://drive.google.com/uc?export=view&id=1NSUoxeb29qUtJuw3QkOa-OBE75ATv0uQ"
+    />
+
+    <!--- CDN BOOTSTRAP ---->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <!--- GOOGLE FONTS ---->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--- GOOGLE ICONS ---->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!--- My Loading Screen ---->
+    <div class="preloader">
+      <div class="preloader-wrapper">
+        <div class="preloader-circle-1"></div>
+      </div>
+      <div class="preloader-wrapper">
+        <div class="preloader-circle-2"></div>
+      </div>
+      <div class="preloader-wrapper">
+        /
+        <div class="preloader-circle-3"></div>
+      </div>
+    </div>
+
+    <!--- My Modal Screen ---->
+    <div class="modal" id="modal">
+      <span class="material-symbols-rounded" id="closeModal"> close </span>
+      <img class="modal-image" id="modal-image" />
+      <div id="modal-caption"></div>
+    </div>
+
+    <!--- Side Navigation ---->
+    <div class="side-nav" id="side-nav">
+      <a href="about-me.html"
+        ><img
+          src="https://drive.google.com/uc?export=view&id=1NSUoxeb29qUtJuw3QkOa-OBE75ATv0uQ"
+          alt=""
+      /></a>
+      <a href="index.html" class="owner-name"><h1>Axl Rich</h1></a>
+      <a href="index.html" class="nav-active nav-select">Home</a>
+      <a href="my-services.html" class="nav-select">My Services</a>
+
+      <div class="socmed-buttons">
+        <a class="fb-button" href="https://www.facebook.com/axlrich.fb/"
+          ><i class="bi bi-facebook"></i>
+        </a>
+        <a class="ig-button" href="https://www.instagram.com/axlrich.ig/"
+          ><i class="bi bi-instagram"></i
+        ></a>
+        <a class="tw-button" href="https://twitter.com/axlrichtwits"
+          ><i class="bi bi-twitter"></i
+        ></a>
+      </div>
+    </div>
+    <span
+      class="material-symbols-rounded"
+      id="closeNav"
+      onclick="closeSideBar()"
+    >
+      close
+    </span>
+    <span class="material-symbols-rounded" id="openNav" onclick="openSideBar()">
+      menu
+    </span>
+    
+
+    <!--- Main Content ---->
+    <div class="main-content" id="main-content">
+      <!--- Main Content Header ---->
+      <div class="header">
+        <h1>About Me</h1>
+      </div>
+      <article class="self-intro">
+        <div class="left-section">
+          <h3>Hello! I'm</h3>
+          <h2>
+            Axl Rich, <br /><span> WAS A MOBILE PHOTOGRAPHER.</span> <br />
+            I Capture Life
+          </h2>
+          <p>
+            Back when I was a senior high school student, photography was once
+            one of my hobbies. I always enjoy taking pictures with anyone or
+            anything around me.
+          </p>
+        </div>
+        <div class="right-section">
+          <h1>Axl Rich</h1>
+        </div>
+      </article>
+
+      <article class="socmed">
+        <h3>Follow my Social Media Accounts</h3>
+        <div class="socmed-buttons">
+          <a class="fb-button" href="https://www.facebook.com/axlrich.fb/">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a class="ig-button" href="https://www.instagram.com/axlrich.ig/"
+            ><i class="bi bi-instagram"></i>
+          </a>
+          <a class="tw-button" href="https://twitter.com/axlrichtwits">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+      </article>
+
+      <article class="gallery">
+        <h2>Collection</h2>
+        <div class="portrait-grid">
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1J-hIdHrqGnbzo3tRw30p_wbQUzvB-9lr"
+              alt="Clody Cabanlit"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1oLCIDYLHsOzXe1Je4H2oVwiw8JDfrPar"
+              alt="Joselito Villanueva"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1VhORoiT6swER_xF6fH3Vr9NnkDOGNU8X"
+              alt="Miana Mae Miparanum"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1R2FrAqnn4KF5WPvOtpC3cOy0YAUL6Xua"
+              alt="Our Siamese Cat"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=176lpjfVYudETWwztbdZ682v9iTNkjjgH"
+              alt="Eric Miras"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1kEH132bnyqRv6tlu81INXtTEk5WqkI_V"
+              alt="Sniper 150 MXI(2016 Model)"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1Ny_aqqyNj5AvcjdGVfNLq7Pzqv1Isnyi"
+              alt="Macro Shot"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1amy0dsSK_15ESmabqBCQDk8QUEGqUzP1"
+              alt="Me(Year 2019)"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo portrait-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1P4eFJJvuVGwWHgbJOLskMVR6o5Gfhk8K"
+              alt="Milky Way Shot (Liloan, Santander, Cebu)"
+              onclick="displayModal(this)"
+            />
+          </div>
+        </div>
+        <div class="landscape-grid">
+          <div class="photo landscape-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1JL9aJjRSfx1CxgNm5oBFLIczfaS6AzVh"
+              alt="Cris John Vertudes"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo landscape-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1L236wFxPr3ysOPZrmOWCq59RQfmLKag9"
+              alt="Jea Hisoler Gaco"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo landscape-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1W45kRKqJrMQj2tNVJ45aztY75ZkXTiYm"
+              alt="Eden Resort's Bar"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo landscape-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1vvih4r8woxwPD4HsXIADoy-5SfzVxz9j"
+              alt="12-TVL (2019 Batch)"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo landscape-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1iHNdXPFzFeN78krLYkKSWYYOjzbmHb5n"
+              alt="Second Home"
+              onclick="displayModal(this)"
+            />
+          </div>
+          <div class="photo landscape-photo">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1Wg3tvaNvafxBqwDP8qobZArTNdVMpMy2"
+              alt="Second Home"
+              onclick="displayModal(this)"
+            />
+          </div>
+        </div>
+      </article>
+
+      <!--- Main Content Footer ---->
+      <div class="main-footer">
+        <div class="main-footer-container">
+          <div class="recent-photos">
+            <h4 style="align-self: center">Recent Photos</h4>
+            <div class="footer-photos">
+              <div class="photo portrait-photo">
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1J-hIdHrqGnbzo3tRw30p_wbQUzvB-9lr"
+                  alt="Clody Cabanlit"
+                  onclick="displayModal(this)"
+                />
+              </div>
+              <div class="photo portrait-photo">
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1oLCIDYLHsOzXe1Je4H2oVwiw8JDfrPar"
+                  alt="Joselito Villanueva"
+                  onclick="displayModal(this)"
+                />
+              </div>
+              <div class="photo portrait-photo">
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1VhORoiT6swER_xF6fH3Vr9NnkDOGNU8X"
+                  alt="Miana Mae Miparanum"
+                  onclick="displayModal(this)"
+                />
+              </div>
+              <div class="photo portrait-photo">
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1R2FrAqnn4KF5WPvOtpC3cOy0YAUL6Xua"
+                  alt="Our Siamese Cat"
+                  onclick="displayModal(this)"
+                />
+              </div>
+              <div class="photo portrait-photo">
+                <img
+                  src="https://drive.google.com/uc?export=view&id=176lpjfVYudETWwztbdZ682v9iTNkjjgH"
+                  alt="Eric Miras"
+                  onclick="displayModal(this)"
+                />
+              </div>
+              <div class="photo portrait-photo">
+                <img
+                  src="https://drive.google.com/uc?export=view&id=1kEH132bnyqRv6tlu81INXtTEk5WqkI_V"
+                  alt="Sniper 150 MXI(2016 Model)"
+                  onclick="displayModal(this)"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="contact">
+            <h4 style="align-self: center">Contact Me</h4>
+            <div class="contact-info">
+              <div class="info">
+                <span class="material-symbols-rounded"> location_on </span>
+                <span>Looc, Santander, Cebu, Philippines</span>
+              </div>
+              <div class="info">
+                <span class="material-symbols-rounded"> call </span>
+                <span>(+63) 929 621 2747</span>
+              </div>
+              <div class="info">
+                <span class="material-symbols-rounded"> mail </span>
+                <span>janaxlrichjuguilon@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">Copyright ©2022 All rights reserved</p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
